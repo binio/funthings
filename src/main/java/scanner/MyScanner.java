@@ -24,6 +24,6 @@ public class MyScanner implements  Outputs{
     }
 
     public Double outputDouble () {
-        return null;
+        return sc.nextDouble();
     }
 }

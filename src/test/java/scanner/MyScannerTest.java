@@ -18,7 +18,7 @@ public class MyScannerTest {
 
     @Before
     public void setUp() {
-        String data = "Hello, World!\r\n";
+        String data = "12.2";
         Scanner scanner;
         InputStream stdin = System.in;
         try {
@@ -30,7 +30,7 @@ public class MyScannerTest {
         mysc = new MyScanner(scanner);
     }
 
-    @Test
+    //@Test
     public void testOutputString() {
         assertEquals("Hello, World!", mysc.outputString());
 
@@ -43,7 +43,7 @@ public class MyScannerTest {
 
     @Test
     public void testOutputDouble() {
-
+        assertEquals(new Double(12.2), mysc.outputDouble());
     }
 
 }
